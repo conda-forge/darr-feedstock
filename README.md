@@ -7,7 +7,7 @@ Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/darr-feedstock/blob/master/LICENSE.txt)
 
-Summary: A Python science library for memory-mapped numeric arrays, based on a format that is self-explanatory and tool-independent.
+Summary: A Python library for memory-mapped numeric arrays, based on a format that is self-explanatory and tool-independent.
 
 Development: https://github.com/gbeckers/darr
 
@@ -28,7 +28,7 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9682&branchName=master">
         <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/darr-feedstock?branchName=master">
       </a>
     </td>
@@ -49,6 +49,7 @@ Installing `darr` from the `conda-forge` channel can be achieved by adding `cond
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `darr` can be installed with:
