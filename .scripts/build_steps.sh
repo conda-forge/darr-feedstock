@@ -54,11 +54,14 @@ else
     conda $BUILD_CMD "${RECIPE_ROOT}" -m "${CI_SUPPORT}/${CONFIG}.yaml" \
         --suppress-variables ${EXTRA_CB_OPTIONS:-} \
         --clobber-file "${CI_SUPPORT}/clobber_${CONFIG}.yaml"
-
-    ( startgroup "Uploading packages" ) 2> /dev/null
-
+    endgroup "Running conda build"
+    startgroup "Validating outputs"
+    validate_recipe_outputs "${FEEDSTOCK_NAME}"
+    endgroup "Validating outputs"
     if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
-        upload_package  "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
+        startgroup "Uploading packages"
+        upload_package --validate --feedstock-name="${FEEDSTOCK_NAME}"  "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
+        endgroup "Uploading packages"
     fi
 
     ( endgroup "Uploading packages" ) 2> /dev/null
