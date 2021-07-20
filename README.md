@@ -13,13 +13,15 @@ Development: https://github.com/gbeckers/darr
 
 Documentation: https://darr.readthedocs.io/
 
-Darr is a Python science library that enables you to work efficiently with
-disk-based numeric arrays without depending on tool-specific data formats.
-This makes it easy to share your data with those who do not use Darr or even
-Python. No exporting required and, as the data is saved in a self-explanatory
-way, not much explanation required either. Tool-independent and easy access
-to data is in line with good scientific practice as it promotes wide and
-long-term availability, to others but also to yourself.
+Darr is a Python science library for working efficiently with potentially
+large, disk-based numeric arrays and metadata, without depending on
+tool-specific or complicated data formats. Data is persistent on disk in a
+self-explanatory way, making it trivially easy to share it and use it in
+different environments. No need to export anything or to provide much
+explanation, and no need to assume that a specific tool will be available.
+Tool-independent and easy access to data is in line with good scientific
+practice as it promotes wide and long-term availability, to others and
+to yourself.
 
 
 Current build status
@@ -28,7 +30,7 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9682&branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=master">
         <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/darr-feedstock?branchName=master">
       </a>
     </td>
