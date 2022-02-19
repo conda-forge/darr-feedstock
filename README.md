@@ -13,15 +13,14 @@ Development: https://github.com/gbeckers/darr
 
 Documentation: https://darr.readthedocs.io/
 
-Darr is a Python science library for working efficiently with potentially
-large, disk-based numeric arrays and metadata, without depending on
-tool-specific or complicated data formats. Data is persistent on disk in a
-self-explanatory way, making it trivially easy to share it and use it in
-different environments. No need to export anything or to provide much
-explanation, and no need to assume that a specific tool will be available.
-Tool-independent and easy access to data is in line with good scientific
-practice as it promotes wide and long-term availability, to others and
-to yourself.
+Darr is a Python science library for disk-based NumPy arrays that persist in
+a format that is simple, self-documented and tool-independent. It enables
+you to work efficiently with potentially very large arrays, while keeping
+your data easily accessible from a wide range of computing environments.
+Self-documentation includes code for reading the array in a variety of
+current scientific data tools such as Python, R, Julia, IDL, Matlab,
+Maple, and Mathematica. It is trivially easy to share your data with
+others or with yourself when working in different computing environments.
 
 
 Current build status
