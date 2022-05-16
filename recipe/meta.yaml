@@ -1,5 +1,5 @@
 {% set name = "darr" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4230a1051992e4e2f3b1043e482413df4afd11c32dc12fe67ac25937669f5ccf
+  sha256: 3971d2f2864803a587d4b6dd49f8dd96298e5a273ca9580c34c41cf51f37092b
 
 build:
   number: 0
@@ -36,14 +36,18 @@ about:
   summary: >-
     A Python science library for memory-mapped numeric arrays, based on a format that is self-explanatory and tool-independent.
   description: |
-    Darr is a Python science library for disk-based NumPy arrays that persist in
-    a format that is simple, self-documented and tool-independent. It enables
-    you to work efficiently with potentially very large arrays, while keeping 
-    your data easily accessible from a wide range of computing environments.  
-    Self-documentation includes code for reading the array in a variety of 
-    current scientific data tools such as Python, R, Julia, IDL, Matlab, 
-    Maple, and Mathematica. It is trivially easy to share your data with 
-    others or with yourself when working in different computing environments.
+    Darr is a Python science library for disk-based NumPy arrays that
+    persist in a format that is simple, self-documented and tool-independent.
+    It enables you to work efficiently with potentially very large arrays, while
+    keeping your data easily accessible from a wide range of computing
+    environments. Even if you don't work with very large arrays, Darr is a very
+    convenient way to store your arrays in a way that keeps them universally
+    readable and documented, which is in line with good scientific practice. 
+    Auto-documentation includes code for reading the array in a variety of 
+    current scientific data tools such as Python, R, Julia, IDL, Matlab, Maple, 
+    and Mathematica. It is trivially easy to share your data with others or 
+    with yourself when working in different computing environments, no 
+    exporting or much explanation required.
   doc_url: https://darr.readthedocs.io/
   dev_url: https://github.com/gbeckers/darr
 
