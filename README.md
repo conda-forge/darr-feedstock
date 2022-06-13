@@ -5,7 +5,7 @@ Home: https://github.com/gbeckers/darr
 
 Package license: BSD-3-Clause
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/darr-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/darr-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Python science library for memory-mapped numeric arrays, based on a format that is self-explanatory and tool-independent.
 
@@ -13,14 +13,18 @@ Development: https://github.com/gbeckers/darr
 
 Documentation: https://darr.readthedocs.io/
 
-Darr is a Python science library for disk-based NumPy arrays that persist in
-a format that is simple, self-documented and tool-independent. It enables
-you to work efficiently with potentially very large arrays, while keeping
-your data easily accessible from a wide range of computing environments.
-Self-documentation includes code for reading the array in a variety of
-current scientific data tools such as Python, R, Julia, IDL, Matlab,
-Maple, and Mathematica. It is trivially easy to share your data with
-others or with yourself when working in different computing environments.
+Darr is a Python science library for disk-based NumPy arrays that
+persist in a format that is simple, self-documented and tool-independent.
+It enables you to work efficiently with potentially very large arrays, while
+keeping your data easily accessible from a wide range of computing
+environments. Even if you don't work with very large arrays, Darr is a very
+convenient way to store your arrays in a way that keeps them universally
+readable and documented, which is in line with good scientific practice.
+Auto-documentation includes code for reading the array in a variety of
+current scientific data tools such as Python, R, Julia, IDL, Matlab, Maple,
+and Mathematica. It is trivially easy to share your data with others or
+with yourself when working in different computing environments, no
+exporting or much explanation required.
 
 
 Current build status
@@ -29,8 +33,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9682&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/darr-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9682&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/darr-feedstock?branchName=main">
       </a>
     </td>
   </tr>
@@ -53,16 +57,41 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `darr` can be installed with:
+Once the `conda-forge` channel has been enabled, `darr` can be installed with `conda`:
 
 ```
 conda install darr
 ```
 
-It is possible to list all of the versions of `darr` available on your platform with:
+or with `mamba`:
+
+```
+mamba install darr
+```
+
+It is possible to list all of the versions of `darr` available on your platform with `conda`:
 
 ```
 conda search darr --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search darr --channel conda-forge
+```
+
+Alternatively, `mamba repoquery` may provide more information:
+
+```
+# Search all versions available on your platform:
+mamba repoquery search darr --channel conda-forge
+
+# List packages depending on `darr`:
+mamba repoquery whoneeds darr --channel conda-forge
+
+# List dependencies of `darr`:
+mamba repoquery depends darr --channel conda-forge
 ```
 
 
@@ -80,10 +109,12 @@ for each of the installable packages. Such a repository is known as a *feedstock
 A feedstock is made up of a conda recipe (the instructions on what and how to build
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
-[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
-and [TravisCI](https://travis-ci.com/) it is possible to build and upload installable
-packages to the [conda-forge](https://anaconda.org/conda-forge)
-[Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
+[Azure](https://azure.microsoft.com/en-us/services/devops/), [GitHub](https://github.com/),
+[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
+[Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
+it is possible to build and upload installable packages to the
+[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
 [conda-smithy](https://github.com/conda-forge/conda-smithy) has been developed.
