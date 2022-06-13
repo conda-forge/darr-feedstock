@@ -1,5 +1,5 @@
 {% set name = "darr" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3971d2f2864803a587d4b6dd49f8dd96298e5a273ca9580c34c41cf51f37092b
+  sha256: 4002ee959d000103e5e6d566f8e822c3330a61190037e8a8038f75a1766e2de0
 
 build:
   number: 0
@@ -23,6 +23,7 @@ requirements:
   run:
     - python >=3.6
     - numpy >=1.12
+    - packaging >=20.0
 
 test:
   imports:
