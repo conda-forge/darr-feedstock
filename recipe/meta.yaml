@@ -35,7 +35,7 @@ about:
   license_family: BSD
   license_file: LICENSE
   summary: >-
-    A Python science library for memory-mapped numeric arrays, based on a format that is self-explanatory and tool-independent.
+    A Python science library that stores NumPy arrays in a way that is self-documented and tool-independent.
   description: |
     Darr is a Python science library for disk-based NumPy arrays that
     persist in a format that is simple, self-documented and tool-independent.
