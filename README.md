@@ -7,7 +7,7 @@ Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/darr-feedstock/blob/main/LICENSE.txt)
 
-Summary: A Python science library for memory-mapped numeric arrays, based on a format that is self-explanatory and tool-independent.
+Summary: A Python science library that stores NumPy arrays in a way that is self-documented and tool-independent.
 
 Development: https://github.com/gbeckers/darr
 
