@@ -1,5 +1,5 @@
 {% set name = "darr" %}
-{% set version = "0.5.3" %}
+{% set version = "0.5.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4002ee959d000103e5e6d566f8e822c3330a61190037e8a8038f75a1766e2de0
+  sha256: a714152bca68f6b2121d43555128532ef350bf2291e91e22d4faa90c04ad645e
 
 build:
   number: 0
@@ -35,7 +35,7 @@ about:
   license_family: BSD
   license_file: LICENSE
   summary: >-
-    A Python science library for memory-mapped numeric arrays, based on a format that is self-explanatory and tool-independent.
+    A Python science library that stores NumPy arrays in a way that is self-documented and tool-independent.
   description: |
     Darr is a Python science library for disk-based NumPy arrays that
     persist in a format that is simple, self-documented and tool-independent.
