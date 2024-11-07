@@ -1,11 +1,11 @@
-About darr
-==========
+About darr-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/darr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/gbeckers/darr
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/darr-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Python science library that stores NumPy arrays in a way that is self-documented and tool-independent.
 
@@ -17,7 +17,7 @@ Darr is a Python science library for disk-based NumPy arrays that
 persist in a format that is simple, self-documented and tool-independent.
 It enables you to work efficiently with potentially very large arrays, while
 keeping your data easily accessible from a wide range of computing
-environments. Even if you don't work with very large arrays, Darr is a very
+environments. Even if you don't work with very large arrays, Darr is a
 convenient way to store your arrays in a way that keeps them universally
 readable and documented, which is in line with good scientific practice.
 Auto-documentation includes code for reading the array in a variety of
@@ -113,7 +113,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
