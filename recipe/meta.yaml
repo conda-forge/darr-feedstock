@@ -17,17 +17,17 @@ build:
 
 requirements:
   host:
-    - python {{ python_min  }}.*
+    - python >=3.6
     - pip
     - setuptools
   run:
-    - python >={{ python_min }}
+    - python >=3.6
     - numpy >=1.12
     - packaging >=20.0
 
 test:
   requires:
-    - python ={{ python_min  }}
+    - python >=3.6
   imports:
     - darr
 
